@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Zero Clipboard Test</title>
+    <script type="text/javascript" src="./index.js"></script>
+
+
+
+</head>
+<body>
+	 <div id="qrcodeCanvas"></div>
+	 <script type="text/javascript">
+  var qrnode = new AraleQRCode({
+	render: 'canvas',
+	correctLevel: 0,
+	text: 'http://www.alipay.com/',
+	size: 300,
+	background: '#eeeeee',
+	foreground: '#667766',
+	pdground: '#00aaee',
+	image : 'https://t.alipayobjects.com/images/rmsweb/T1ZsxhXdxbXXXXXXXX.png',
+	imageSize : 100
+});
+  //画canvas 二维码
+  document.getElementById('qrcodeCanvas').appendChild(qrnode);
+  
+  
+
+  </script>
+</body>
+</html>
